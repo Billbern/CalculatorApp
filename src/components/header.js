@@ -23,7 +23,7 @@ function Header(){
     return (
         <div className="mb-5 sm:mb-6">
             <div className={`h-full flex items-end justify-between text-xs ${state.toggle !== 'one'? state.theme.textTwo : state.theme.textOne }`}>
-                <h2 className="text-4xl">calc</h2>    
+                <h1 className="text-4xl">calc</h1>    
                 <div className="flex items-end">
                     <span>THEME</span>
                     <div className="h-full flex flex-col items-end justify-end">
