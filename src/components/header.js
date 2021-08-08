@@ -38,8 +38,8 @@ function Header(){
                             {
                                 ['one', 'two', 'three'].map((item, key)=>{
                                     return <div key={key} className={`relative flex ${item !== 'one' ? 'ml-1': ''}`}>
-                                                <label className={`inline-block w-4 h-4 ${state.toggle === item ? state.theme.keybutThree.split(' ')[0] : ''} rounded-full`}></label>
-                                                <input className="absolute w-full h-full z-3 opacity-0"  type="radio" name="theme" value={item} checked={item === state.toggle} onChange={handleChange} />
+                                                <label htmlFor={`theme${item}`} className={`inline-block w-4 h-4 ${state.toggle === item ? state.theme.keybutThree.split(' ')[0] : ''} rounded-full`}></label>
+                                                <input className="absolute w-full h-full z-3 opacity-0"  type="radio" name={`theme${item}`} value={item} checked={item === state.toggle} onChange={handleChange} />
                                             </div>
                                 })
                             }
