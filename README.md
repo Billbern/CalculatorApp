@@ -45,13 +45,14 @@ Users should be able to:
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
+- React [Context Api](https://reactjs.org/docs/context.html)
 - [React](https://reactjs.org/) - JS library
 
 
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+<!-- Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
 
@@ -67,7 +68,7 @@ To see how you can add code snippets, see below:
 const proudOfThisFunc = () => {
   console.log('🎉')
 }
-```
+``` -->
 
 
 ### Continued development
@@ -84,6 +85,6 @@ The Calculator even though functional has some small bugs that needs fixing also
 ## Author
 
 - Frontend Mentor - [@Billbern](https://www.frontendmentor.io/profile/Billbern)
-- Twitter - [@Kbillgreenz](https://www.twitter.com/yourusername)
+- Twitter :bird: - [@Kbillgreenz](https://www.twitter.com/Kbillgreenz)
 
 
