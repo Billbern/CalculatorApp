@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: {
     enabled: true,
-    content: ['./src/components/*.js'] 
+    content: ['./src/**/*.js'] 
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
@@ -299,7 +299,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
-      spartan: ['Spartan', 'sans-serif'],
+      spartan: ["'Spartan'", 'sans-serif'],
       sans: [
         'ui-sans-serif',
         'system-ui',

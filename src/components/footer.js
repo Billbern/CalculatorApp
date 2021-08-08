@@ -4,6 +4,8 @@ import { Context } from '../utils/store';
 function Footer() {
     
     // get state from store context 
+    // text-cust-red-one text-cust-orange-three text-cust-cyan-three
+    
     const {state} = useContext(Context);
 
     return(
