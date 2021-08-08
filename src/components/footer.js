@@ -9,7 +9,7 @@ function Footer() {
     const {state} = useContext(Context);
 
     return(
-        <div role="footer" className={`text-xs ${state.toggle !== 'one' ? state.theme.textTwo : state.theme.textOne} mt-4 sm:mt-0 mx-auto w-max`}>
+        <div ariaRole="footer" className={`text-xs ${state.toggle !== 'one' ? state.theme.textTwo : state.theme.textOne} mt-4 sm:mt-0 mx-auto w-max`}>
             Challenge by <a className={`text${state.theme.keybutThree.split(' ')[0].substring(2,)}`} href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noreferrer" >Frontend Mentor</a>.
             Coded by <a className={`text${state.theme.keybutThree.split(' ')[0].substring(2,)}`} href="https://www.github.com/Billbern" target="_blank" rel="noreferrer">Billbern</a>.
         </div>
