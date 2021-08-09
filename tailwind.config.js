@@ -9,10 +9,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      xs: '375px',
-      sm: '640px',
-      md: '1024px',
-      lg: '1280px'
+      xs: {min: '0', max: '767px'},
+      sm: {min: '768px', max: '1279px'},
+      md: {min: '1280px', max: '1439px'},
+      lg: {min: '1440px', max: '1599px'},
+      xl: {min: '1600px', max: '1919px'},
+      '2xl': {min: '1920px'}
+
     },
     colors: {
       transparent: 'transparent',
@@ -70,14 +73,17 @@ module.exports = {
       0.5: '0.125rem',
       1: '0.25rem',
       1.5: '0.375rem',
+      1.75: '0.386rem',
       2: '0.5rem',
       2.5: '0.625rem',
       3: '0.75rem',
+      3.25: '0.8125rem',
       3.5: '0.875rem',
       4: '1rem',
       5: '1.25rem',
       6: '1.5rem',
       7: '1.75rem',
+      7.5: '1.875rem',
       8: '2rem',
       9: '2.25rem',
       10: '2.5rem',
@@ -85,10 +91,13 @@ module.exports = {
       12: '3rem',
       14: '3.5rem',
       16: '4rem',
+      18: '4.25rem',
       20: '5rem',
       24: '6rem',
+      26: '6.25rem',
       28: '7rem',
       32: '8rem',
+      33: '8.75rem',
       36: '9rem',
       40: '10rem',
       44: '11rem',
@@ -98,7 +107,9 @@ module.exports = {
       60: '15rem',
       64: '16rem',
       72: '18rem',
+      78: '18.75rem',
       80: '20rem',
+      85: '23.75rem',
       96: '24rem',
     },
     animation: {

@@ -29,7 +29,7 @@ function KeyButton(props) {
     }
 
     return (
-        <button onClick={ () => handleClick(props.value) } className={`h-16 ${props.color} ${props.bgColor} ${props.shadow} rounded-xl ${props.fontSize} font-bold ${props.span}`} data-value={props.value} >{props.value}</button>
+        <button onClick={ () => handleClick(props.value) } className={`py-3 ${props.color} ${props.bgColor} ${props.shadow} rounded-xl ${props.fontSize} font-bold ${props.span}`} data-value={props.value} >{props.value}</button>
     );
 }
 

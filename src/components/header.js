@@ -21,25 +21,27 @@ function Header(){
     }
 
     return (
-        <div className="mb-5 sm:mb-6">
+        <div className="mb-8">
             <div className={`h-full flex items-end justify-between text-xs ${state.toggle !== 'one'? state.theme.textTwo : state.theme.textOne }`}>
-                <h1 className="text-4xl">calc</h1>    
+                <h1 className="text-4xl">
+                    <label htmlFor="screen">calc</label>
+                </h1>    
                 <div className="flex items-end">
                     <span>THEME</span>
                     <div className="h-full flex flex-col items-end justify-end">
-                        <div className="flex justify-end pr-1.5 mb-1">
+                        <div className="flex justify-end pr-1.5 mb-2">
                             {
                                 [1, 2, 3].map((item, key)=>{
-                                    return <span className="ml-3.5" key={key}>{item}</span>
+                                    return <label htmlFor={`theme${item}`} className="ml-3.5" key={key}>{item}</label>
                                 })
                             }
                         </div>
-                        <div className={`flex items-center ${state.theme.keypad} ml-3 p-0.5 rounded-full`}>
+                        <div className={`flex items-center ${state.theme.keypad} ml-6 p-1 rounded-full`}>
                             {
                                 ['one', 'two', 'three'].map((item, key)=>{
                                     return <div key={key} className={`relative flex ${item !== 'one' ? 'ml-1': ''}`}>
-                                                <label htmlFor={`theme${item}`} className={`inline-block w-4 h-4 ${state.toggle === item ? state.theme.keybutThree.split(' ')[0] : ''} rounded-full`}></label>
-                                                <input className="absolute w-full h-full z-3 opacity-0"  type="radio" name={`theme${item}`} value={item} checked={item === state.toggle} onChange={handleChange} />
+                                                <span className={`inline-block w-4 h-4 ${state.toggle === item ? state.theme.keybutThree.split(' ')[0] : ''} rounded-full`}></span>
+                                                <input className="absolute w-full h-full z-3 opacity-0"  type="radio" id={`theme${key+1}`} value={item} checked={item === state.toggle} onChange={handleChange} />
                                             </div>
                                 })
                             }

@@ -30,7 +30,7 @@ export default class KeyPad extends Component {
         const {state} = this.context;
 
         return(
-            <div className={`${state.theme.keypad} ${ state.theme.textOne } rounded-xl grid grid-cols-4 w-full gap-4 md:gap-6 mt-5 sm:mt-6 p-6`}>
+            <div className={`${state.theme.keypad} ${ state.theme.textOne } rounded-xl grid grid-cols-4 w-full gap-3.25 md:gap-6  py-6 px-4 md:py-8 md:px-7.5 mt-6 `}>
                 {
                     this.state.keydata.map((item, key)=>{
                         const checkIt = item.value === '=' ? state.theme.keybutThree : item.value === 'RESET' || item.value === 'DEL' ? state.theme.keybutTwo : `${state.theme.keybutOne} ${state.theme.textTwo}` ;

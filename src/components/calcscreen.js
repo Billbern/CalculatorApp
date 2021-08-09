@@ -12,8 +12,7 @@ function CalcScreen(){
 
     return(
         <>
-            <label htmlFor="screen"></label>
-            <input type="text" name="screen" className={`text-right h-28 w-full ${state.theme.screen} ${state.toggle !== 'one'? state.theme.textTwo : state.theme.textOne } text-5xl font-bold px-7 rounded-xl focus:outline-none`}  onChange={ handleChange } value={state.expression} />
+            <input type="text" id="screen" className={`text-right h-28 w-full ${state.theme.screen} ${state.toggle !== 'one'? state.theme.textTwo : state.theme.textOne } text-5xl font-bold px-7 rounded-xl focus:outline-none`}  onChange={ handleChange } value={state.expression} />
         </>
     );
 }
